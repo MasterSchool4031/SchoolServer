@@ -1,0 +1,6 @@
+Java=/Java.html
+HTML=/HTML.html
+Tomcat=/Tomcat.html
+JavaScript=/Javascript.html
+Jsp-Servlet=/JSP_Servlet.html
+Securite=/Securite.html
