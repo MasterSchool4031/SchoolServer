@@ -105,6 +105,7 @@ public class BookServer implements Runnable{
 	}
 
 	public void stop() {
+		this.stop = true;
 		try (Socket s = getClientSocket();) {
 			s.getOutputStream().write("stop".getBytes());
 		} catch (UnknownHostException e) {
@@ -112,7 +113,6 @@ public class BookServer implements Runnable{
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		this.stop = true;
 	}
 
 	private ServerSocket getServerSoket() throws IOException {
